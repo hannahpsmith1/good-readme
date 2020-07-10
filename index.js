@@ -1,7 +1,8 @@
-var inquirer = require("inquirer");
+const inquirer = require("inquirer");
+const generate = require("./utils/generateMarkdown.js");
+const fs = require ("fs");
 
-inquirer
-  .prompt([
+const questions = [
     {
       type: "input",
       message: "What is your github username?",
@@ -17,22 +18,25 @@ inquirer
         message: "What is your projectName?",
         name: "projectName"
     },
+    // badge
     {
         type: "input",
         message: "Please write a short description of your project?",
         name: "projectDesc"
     },
+    // Something about table of Contents
     {
-        type: "checkbox",
+        type: "list",
         message: "What kind of license do you want?",
-        name: "stack",
+        name: "license",
         choices: [
           "None", 
           "MIT", 
-          "Placeholder", 
+          "GLP", 
           "Placeholder"
         ]
     },
+    // license code 
     {
         type: "input",
         message: "What commands should be run to install dependences?",
@@ -58,14 +62,24 @@ inquirer
         message: "Do you want to include any Gifs??",
         name: "addGIF"
     },
-  ])
-  .then(function(response) {
-    console.log(response)
+  ]
 
-    // if (response.confirm === response.password) {
-    //   console.log("Success!");
-    // }
-    // else {
-    //   console.log("You forgot your password already?!");
-    // }
-  });
+;
+
+function writeToFile(fileName, data) {
+    fs.writeFileSync("squirrel.md", data )
+    // console.log("write", fileName, data)
+}
+
+function init() {
+    // console.log(generate)
+    inquirer
+    .prompt(questions).then(function(response) {
+        console.log(response);
+    writeToFile("README.md",generate(response))
+    
+      });
+
+}
+
+init();
