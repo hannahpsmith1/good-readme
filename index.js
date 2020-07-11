@@ -18,13 +18,16 @@ const questions = [
         message: "What is your projectName?",
         name: "projectName"
     },
-    // badge
     {
         type: "input",
         message: "Please write a short description of your project?",
         name: "projectDesc"
     },
-    // Something about table of Contents
+    {
+        type: "input",
+        message: "Link to Deployed Project",
+        name: "deployed"
+    },
     {
         type: "list",
         message: "What kind of license do you want?",
@@ -36,7 +39,6 @@ const questions = [
           "Placeholder"
         ]
     },
-    // license code 
     {
         type: "input",
         message: "What commands should be run to install dependences?",
@@ -59,6 +61,11 @@ const questions = [
     },
     {
         type: "input",
+        message: "Questions?",
+        name: "questions"
+    },
+    {
+        type: "input",
         message: "Do you want to include any Gifs??",
         name: "addGIF"
     },
@@ -67,7 +74,7 @@ const questions = [
 ;
 
 function writeToFile(fileName, data) {
-    fs.writeFileSync("squirrel.md", data )
+    fs.writeFileSync("goodREADME.md", data )
     // console.log("write", fileName, data)
 }
 
