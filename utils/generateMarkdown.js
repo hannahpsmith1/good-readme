@@ -7,7 +7,7 @@ function generateMarkdown(data) {
 ${data.projectDesc}
 
 ## Deployed Link
-[Deployed Link](${data.deployed})
+[Deployed Link](${data.deployed})  
 [Author's Github](https://wwww.github.com/${data.githubname})
 
 ## Table of Contents
@@ -17,7 +17,7 @@ ${data.projectDesc}
 *[Contributing](##Contributing)  
 *[Tests](##Tests)    
 *[Questions](##Questions)  
-*[GIFS if any](##Gifs)  
+*[GIFS (if any)](##Gifs)  
 
 ## Installation 
 

@@ -1,13 +1,13 @@
 
 
-# Good README
+# 
 
 ## Project Description 
-#######
+
 
 ## Deployed Link
-[Deployed Link](asdf)
-[Author's Github](https://wwww.github.com/hannahpsmith1)
+[Deployed Link]()
+[Author's Github](https://wwww.github.com/)
 
 ## Table of Contents
 *[Installation](##Installation)  
@@ -20,30 +20,30 @@
 
 ## Installation 
 
-npm install
+
 
 ## Usage 
 
-asldfkjadlfjasdflkjasdf
+
 
 ## License
-![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)
+![GitHub license](https://img.shields.io/badge/license-None-blue.svg)
 
 ## Contributing to a Repo
 
-asdlfjaldfasdklfjadf
+
 
 ## Tests for Repo
 
-asdlj
+
 
 ## Questions
 
-undefined
+
 
 
 ## Author's Info  
-- Author's Email: hannahpsmith1@gmail.com
+- Author's Email: 
 
 ## GIFs for context
 ![gifs]()
